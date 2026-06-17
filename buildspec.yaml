@@ -1,14 +1,10 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo Installing
-
   build:
     commands:
-      - echo Build Started
-      - ls -la
+      - echo "Building Docker image..."
+      - docker build -t gsk-website .
 
 artifacts:
   files:
